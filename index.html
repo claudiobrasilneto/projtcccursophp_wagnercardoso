@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8" />
+	<title>.::Programação Web::.</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+
+<body>
+	<div class="topo">
+		<img src="img/topo_aula.png" id="topo" alt="Topo">
+	</div>
+	<br><br><br><br>
+	<h1>WEBSITE CONSTRUÍDO COM PHP</h1>
+	<hr><br>
+
+	<div class="pesquisa">
+		<form method="get" action="recebe.php">
+			<h6>By Claudio Neto</h6>
+			Pesquise no site: &nbsp; <input type="text" name="pesquisa">
+			<input type="submit" name="enviar" value="Pesquisar">
+		</form>
+	</div>
+	
+	<div class="conteudo">
+		<h2>Manual de Uso - Introdução das Aplicações utilizadas</h2>
+	<p>No item acima, vamos realizar uma pesquisa onde as informações coletadas pela caixa de texto serão enviadas por um formulário (método POST) para uma página de tratamentos denominada receb.php.<br>Lá serão coletadas as variáveis que por meio de um Switch vão perceber qual o dado coleto e vão relacionar a uma determinada resposta.<br><br> No item abaixo também haverá uma coleta de informações via formulário, porém neste momento em método POST para esconder as informações da URL.<br>Essas informações serão convertidas em variáveis que serão tratadas em uma estrutura de decisão onde caso a renda registrada seja maior ou igual a 2.000 o crédit será aprovado, caso não o crédito será rcusado.<br></p>
+
+		<fieldset>
+			<legend>
+				<h2>Calcule aqui sua Condição de Crédito</h2>
+			</legend>
+			<img src="img/credito.png" id="creditopic" alt="foto de crédito">
+			<form method="post" action="credito.php">
+				Nome: &nbsp <input type="text" name="nome">
+				Renda em R$: &nbsp <input type="number" name="renda">
+				<input type="submit" name="enviar" value="Calcular crédito!">
+			</form>
+
+		</fieldset>
+		<br><br><br>
+		
+<h2>Introdução ao Formulário de Orçamento</h2>
+<p>Para finalizar vamos utilizar o formulário abaixo para que seja possível realizar um orçamento de serviços.<br> Nesta simulação vamos apresentar uma opção de impressão da página de orçamentos.<br></p>
+		<fieldset>
+			<legend>
+				<h2>Solicite aqui um orçamento de serviços </h2>
+			</legend>
+			<img src="img/solicite-um-orcamento.png" id="orcamentopic" alt="foto de crédito">
+			<form method="post" action="orcamento.php">
+				Data do orçamento: &nbsp <input type="date" name="data">
+				Tempo de garantia (em meses): &nbsp <input type="number" name="garantia" min="1" max="6" ><br><br>
+				Serviço a ser realizado
+				<select name="servico">
+					<option>Formatação</option>
+					<option>Troca de peças</option>
+					<option>Instalação de softwares</option>
+				</select>
+				Descrição do aparelho/computador: &nbsp <input type="text" name="aparelho">
+				Nome do cliente: &nbsp <input type="text" name="cliente">
+				<input type="submit" name="enviar" value="Solicitar orçamento!">
+			</form>
+
+		</fieldset>
+
+	</div>
+
+	<div class="rodape">
+		<h2>WEBSITE SIMPLES COM PHP</h2>
+	</div>
+	<footer>
+		<h4>2022 © Todos os direitos reservados - Desenvolvido por Claudio Brasil Neto.</h4>
+	</footer>
+
+
+</body>
+
+</html>
